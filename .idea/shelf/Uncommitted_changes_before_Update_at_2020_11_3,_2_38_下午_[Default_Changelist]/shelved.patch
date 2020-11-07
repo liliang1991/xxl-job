@@ -1,0 +1,19 @@
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.idea\n.classpath\n.project\n*.iml\ntarget/\n.DS_Store\n.gitattributes\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .gitignore	(revision ea22b62eb11d3e748b0eda8848821c0c49bb301d)
++++ .gitignore	(date 1603940251117)
+@@ -3,5 +3,7 @@
+ .project
+ *.iml
+ target/
++logs/
++nohup.out
+ .DS_Store
+-.gitattributes
++.gitattributes
+\ No newline at end of file

@@ -1,0 +1,6 @@
+/Users/liliang/work/workspace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/FramelessApplication.java
+/Users/liliang/work/workspace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/jobhandler/CommandJobHandler.java
+/Users/liliang/work/workspace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/jobhandler/ShardingJobHandler.java
+/Users/liliang/work/workspace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/config/FrameLessXxlJobConfig.java
+/Users/liliang/work/workspace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/jobhandler/HttpJobHandler.java
+/Users/liliang/work/workspace/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/jobhandler/DemoJobHandler.java

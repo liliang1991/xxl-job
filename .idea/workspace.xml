@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c650aa7b-5e12-40d2-a744-d3321e2aa9a0" name="Default Changelist" comment="增加用户组执行参数">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-admin/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/resources/logback.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../Downloads/apache-maven-3.3.9" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../Downloads/apache-maven-3.3.9/conf/settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1jPEsmeehvBn63zvhhVN5OCqgZj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.XxlJobExecutorApplication">
+    <configuration name="XxlJobAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xxl-job-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxl.job.admin.XxlJobAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XxlJobExecutorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xxl-job-executor-sample-springboot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.xxl.job.executor.XxlJobExecutorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c650aa7b-5e12-40d2-a744-d3321e2aa9a0" name="Default Changelist" comment="" />
+      <created>1603697535704</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603697535704</updated>
+      <workItem from="1603697541368" duration="4991000" />
+      <workItem from="1603764579488" duration="13409000" />
+      <workItem from="1603851042547" duration="21085000" />
+      <workItem from="1603885139529" duration="1913000" />
+      <workItem from="1603937404681" duration="8569000" />
+      <workItem from="1604024579276" duration="4589000" />
+      <workItem from="1604283502363" duration="3218000" />
+      <workItem from="1604304253164" duration="4183000" />
+      <workItem from="1604369188454" duration="17877000" />
+      <workItem from="1604455433217" duration="16682000" />
+      <workItem from="1604542804122" duration="9523000" />
+      <workItem from="1604629164662" duration="6049000" />
+      <workItem from="1604670577566" duration="3060000" />
+    </task>
+    <task id="LOCAL-00001" summary="增加用户组执行参数">
+      <created>1604385427363</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604385427363</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加用户组执行参数">
+      <created>1604388806395</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604388806395</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加用户组执行参数">
+      <created>1604393795123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604393795123</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加用户组执行参数">
+      <created>1604395936903</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604395936903</updated>
+    </task>
+    <task id="LOCAL-00005" summary="增加用户组执行参数">
+      <created>1604476189253</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604476189253</updated>
+    </task>
+    <task id="LOCAL-00006" summary="增加用户组执行参数">
+      <created>1604476557305</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604476557305</updated>
+    </task>
+    <task id="LOCAL-00007" summary="增加用户组执行参数">
+      <created>1604477327163</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604477327163</updated>
+    </task>
+    <task id="LOCAL-00008" summary="增加用户组执行参数">
+      <created>1604478368176</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604478368176</updated>
+    </task>
+    <task id="LOCAL-00009" summary="增加用户组执行参数">
+      <created>1604478392106</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604478392107</updated>
+    </task>
+    <task id="LOCAL-00010" summary="增加用户组执行参数">
+      <created>1604485990506</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604485990506</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="增加用户组执行参数" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加用户组执行参数" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604559020071">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="184" y="81" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.797@0.23.1440.797" timestamp="1604559020071" />
+    <state x="533" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1603871399602">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="533" y="110" key="#com.intellij.ide.util.MemberChooser/0.23.1440.797@0.23.1440.797" timestamp="1603871399602" />
+    <state x="100" y="123" width="1240" height="593" key="DiffContextDialog" timestamp="1604395466106">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="100" y="123" width="1240" height="593" key="DiffContextDialog/0.23.1440.797@0.23.1440.797" timestamp="1604395466106" />
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom" timestamp="1604491675178">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.bottom/0.23.1440.797@0.23.1440.797" timestamp="1604491675178" />
+    <state width="1398" height="2" key="GridCell.Tab.0.center" timestamp="1604491675177">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.center/0.23.1440.797@0.23.1440.797" timestamp="1604491675177" />
+    <state width="1398" height="2" key="GridCell.Tab.0.left" timestamp="1604491675177">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.left/0.23.1440.797@0.23.1440.797" timestamp="1604491675177" />
+    <state width="1398" height="2" key="GridCell.Tab.0.right" timestamp="1604491675178">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.0.right/0.23.1440.797@0.23.1440.797" timestamp="1604491675178" />
+    <state width="1398" height="2" key="GridCell.Tab.1.bottom" timestamp="1604491675178">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.bottom/0.23.1440.797@0.23.1440.797" timestamp="1604491675178" />
+    <state width="1398" height="2" key="GridCell.Tab.1.center" timestamp="1604491675178">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.center/0.23.1440.797@0.23.1440.797" timestamp="1604491675178" />
+    <state width="1398" height="2" key="GridCell.Tab.1.left" timestamp="1604491675178">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.left/0.23.1440.797@0.23.1440.797" timestamp="1604491675178" />
+    <state width="1398" height="2" key="GridCell.Tab.1.right" timestamp="1604491675178">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.1.right/0.23.1440.797@0.23.1440.797" timestamp="1604491675178" />
+    <state width="1398" height="2" key="GridCell.Tab.2.bottom" timestamp="1604491675174">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.2.bottom/0.23.1440.797@0.23.1440.797" timestamp="1604491675174" />
+    <state width="1398" height="2" key="GridCell.Tab.2.center" timestamp="1604491675174">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.2.center/0.23.1440.797@0.23.1440.797" timestamp="1604491675174" />
+    <state width="1398" height="2" key="GridCell.Tab.2.left" timestamp="1604491675174">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.2.left/0.23.1440.797@0.23.1440.797" timestamp="1604491675174" />
+    <state width="1398" height="2" key="GridCell.Tab.2.right" timestamp="1604491675174">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state width="1398" height="2" key="GridCell.Tab.2.right/0.23.1440.797@0.23.1440.797" timestamp="1604491675174" />
+    <state x="465" y="129" key="RollbackChangesDialog" timestamp="1604545106843">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="465" y="129" key="RollbackChangesDialog/0.23.1440.797@0.23.1440.797" timestamp="1604545106843" />
+    <state x="221" y="23" key="SettingsEditor" timestamp="1604558844608">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="221" y="23" key="SettingsEditor/0.23.1440.797@0.23.1440.797" timestamp="1604558844608" />
+    <state x="320" y="159" key="Vcs.Push.Dialog.v2" timestamp="1604485992125">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="320" y="159" key="Vcs.Push.Dialog.v2/0.23.1440.797@0.23.1440.797" timestamp="1604485992125" />
+    <state x="426" y="85" width="1014" height="735" key="find.popup" timestamp="1604374442383">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="426" y="85" width="1014" height="735" key="find.popup/0.23.1440.797@0.23.1440.797" timestamp="1604374442383" />
+    <state x="385" y="190" key="run.anything.popup" timestamp="1603799773713">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="385" y="190" key="run.anything.popup/0.23.1440.797@0.23.1440.797" timestamp="1603799773713" />
+    <state x="385" y="144" key="search.everywhere.popup" timestamp="1603799723480">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="385" y="144" key="search.everywhere.popup/0.23.1440.797@0.23.1440.797" timestamp="1603799723480" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-spring/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-frameless/src/main/java/com/xuxueli/executor/sample/frameless/jobhandler/CommandJobHandler.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-spring/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-executor-samples/xxl-job-executor-sample-springboot/src/main/java/com/xxl/job/executor/service/jobhandler/SampleXxlJob.java</url>
+          <line>227</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/handler/impl/GlueJobHandler.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/handler/impl/ScriptJobHandler.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/thread/JobThread.java</url>
+          <line>154</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-admin/src/main/java/com/xxl/job/admin/core/trigger/XxlJobTrigger.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/util/ScriptUtil.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/util/ScriptUtil.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/handler/impl/ScriptJobHandler.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/handler/impl/ScriptJobHandler.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xxl-job-core/src/main/java/com/xxl/job/core/thread/JobThread.java</url>
+          <line>107</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="io.netty.handler.codec.http.HttpObjectAggregator$AggregatedFullHttpRequest" fieldName="content" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/xxl_job$XxlJobExecutorApplication.ic" NAME="XxlJobExecutorApplication Coverage Results" MODIFIED="1604395032130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

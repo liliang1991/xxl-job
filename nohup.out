@@ -1,0 +1,877 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.0.RELEASE)
+
+18:14:22.610 logback [main] INFO  c.x.job.admin.XxlJobAdminApplication - Starting XxlJobAdminApplication on 10-200-2-125.office.17zuoye.net with PID 14885 (/data/services/xxl-job/xxl-job-admin/target/xxl-job-admin-2.2.1-SNAPSHOT.jar started by root in /data/services/xxl-job)
+18:14:22.617 logback [main] INFO  c.x.job.admin.XxlJobAdminApplication - No active profile set, falling back to default profiles: default
+18:14:25.109 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+18:14:25.127 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+18:14:25.128 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:14:25.128 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+18:14:25.215 logback [main] INFO  o.a.c.c.C.[.[.[/xxl-job-admin] - Initializing Spring embedded WebApplicationContext
+18:14:25.216 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2175 ms
+18:14:26.061 logback [main] INFO  c.x.j.a.c.scheduler.XxlJobScheduler - >>>>>>>>> init xxl-job admin success.
+18:14:26.111 logback [xxl-job, admin JobLogReportHelper] INFO  com.zaxxer.hikari.HikariDataSource - HikariCP - Starting...
+18:14:26.286 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:14:26.377 logback [xxl-job, admin JobLogReportHelper] INFO  com.zaxxer.hikari.HikariDataSource - HikariCP - Start completed.
+18:14:26.411 logback [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+18:14:26.879 logback [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+18:14:26.914 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+18:14:26.936 logback [main] INFO  o.a.c.c.C.[.[.[/xxl-job-admin] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:14:26.936 logback [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:14:26.945 logback [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+18:14:26.950 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path '/xxl-job-admin'
+18:14:26.972 logback [main] INFO  c.x.job.admin.XxlJobAdminApplication - Started XxlJobAdminApplication in 4.974 seconds (JVM running for 6.01)
+18:14:31.000 logback [xxl-job, admin JobScheduleHelper#scheduleThread] INFO  c.x.j.a.c.thread.JobScheduleHelper - >>>>>>>>> init xxl-job admin scheduler success.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.0.RELEASE)
+
+18:14:31.954 logback [main] INFO  c.x.j.e.XxlJobExecutorApplication - Starting XxlJobExecutorApplication on 10-200-2-125.office.17zuoye.net with PID 15313 (/data/services/xxl-job/xxl-job-executor-samples/xxl-job-executor-sample-springboot/target/xxl-job-executor-sample-springboot-2.2.1-SNAPSHOT.jar started by root in /data/services/xxl-job)
+18:14:31.959 logback [main] INFO  c.x.j.e.XxlJobExecutorApplication - No active profile set, falling back to default profiles: default
+18:14:33.503 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8083 (http)
+18:14:33.521 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+18:14:33.522 logback [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:14:33.523 logback [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.35]
+18:14:33.614 logback [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:14:33.614 logback [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1281 ms
+18:14:33.710 logback [main] INFO  c.x.j.e.core.config.XxlJobConfig - >>>>>>>>>>> xxl-job config init.
+18:14:33.851 logback [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:14:34.068 logback [main] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@385c9627[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler]
+18:14:34.070 logback [main] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:shardingJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@139982de[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#shardingJobHandler]
+18:14:34.070 logback [main] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:commandJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@682b2fa[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#commandJobHandler]
+18:14:34.070 logback [main] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:demoJobHandler2, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@217ed35e[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#demoJobHandler2]
+18:14:34.070 logback [main] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job register jobhandler success, name:httpJobHandler, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@7dcf94f8[class com.xxl.job.executor.service.jobhandler.SampleXxlJob#httpJobHandler]
+18:14:34.175 logback [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+18:14:34.212 logback [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8083 (http) with context path ''
+18:14:34.231 logback [main] INFO  c.x.j.e.XxlJobExecutorApplication - Started XxlJobExecutorApplication in 2.854 seconds (JVM running for 4.016)
+18:14:34.439 logback [Thread-110] INFO  com.xxl.job.core.server.EmbedServer - >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9900
+18:15:00.093 logback [xxl-rpc, EmbedServer bizThreadPool-1366006103] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7a059ee5
+18:15:00.095 logback [xxl-rpc, EmbedServer bizThreadPool-1366006103] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@793e466d
+18:16:33.135 logback [Thread-114] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-114,10,main]
+18:16:35.622 logback [Thread-113] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-113,10,main]
+18:20:00.059 logback [xxl-rpc, EmbedServer bizThreadPool-2050746479] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@248dae6a
+18:20:00.102 logback [xxl-rpc, EmbedServer bizThreadPool-2050746479] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2a4a548b
+18:21:33.113 logback [Thread-122] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-122,10,main]
+18:21:35.548 logback [Thread-119] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-119,10,main]
+18:25:00.035 logback [xxl-rpc, EmbedServer bizThreadPool-1408976648] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@23695b5e
+18:25:00.064 logback [xxl-rpc, EmbedServer bizThreadPool-1408976648] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2daeb143
+18:26:33.045 logback [Thread-125] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-125,10,main]
+18:26:35.568 logback [Thread-128] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-128,10,main]
+18:30:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-2036867336] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@44e79f51
+18:30:00.044 logback [xxl-rpc, EmbedServer bizThreadPool-2036867336] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4a2079bd
+18:31:33.052 logback [Thread-131] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-131,10,main]
+18:31:35.817 logback [Thread-132] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-132,10,main]
+18:35:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-85715393] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2ec983ef
+18:35:00.038 logback [xxl-rpc, EmbedServer bizThreadPool-85715393] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@200e6846
+18:36:33.047 logback [Thread-140] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-140,10,main]
+18:36:35.385 logback [Thread-137] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-137,10,main]
+18:40:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-1266033125] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6802fb07
+18:40:00.051 logback [xxl-rpc, EmbedServer bizThreadPool-1266033125] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@66c51877
+18:41:33.061 logback [Thread-146] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-146,10,main]
+18:41:35.356 logback [Thread-143] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-143,10,main]
+18:45:00.039 logback [xxl-rpc, EmbedServer bizThreadPool-520551175] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@68bdb7ec
+18:45:00.063 logback [xxl-rpc, EmbedServer bizThreadPool-520551175] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@667a548b
+18:46:33.049 logback [Thread-149] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-149,10,main]
+18:46:35.587 logback [Thread-152] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-152,10,main]
+18:50:00.037 logback [xxl-rpc, EmbedServer bizThreadPool-119007178] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3907014b
+18:50:00.070 logback [xxl-rpc, EmbedServer bizThreadPool-119007178] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@33ff6a3b
+18:51:33.047 logback [Thread-155] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-155,10,main]
+18:51:35.560 logback [Thread-158] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-158,10,main]
+18:55:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-1157106352] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@740715f7
+18:55:00.043 logback [xxl-rpc, EmbedServer bizThreadPool-1157106352] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7ac0f507
+18:56:33.037 logback [Thread-161] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-161,10,main]
+18:56:35.363 logback [Thread-164] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-164,10,main]
+19:00:00.050 logback [xxl-rpc, EmbedServer bizThreadPool-2145974631] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@323dd8a7
+19:00:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-2145974631] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3cfa2090
+19:01:33.061 logback [Thread-167] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-167,10,main]
+19:01:35.797 logback [Thread-170] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-170,10,main]
+19:05:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-673422705] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@34310ba9
+19:05:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-673422705] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3af6f35f
+19:06:33.065 logback [Thread-176] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-176,10,main]
+19:06:35.815 logback [Thread-173] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-173,10,main]
+19:10:00.035 logback [xxl-rpc, EmbedServer bizThreadPool-1603205650] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@26808a03
+19:10:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-1603205650] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@284760a3
+19:11:33.068 logback [Thread-182] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-182,10,main]
+19:11:35.621 logback [Thread-179] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-179,10,main]
+19:15:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-848386857] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@38a9e7f7
+19:15:00.049 logback [xxl-rpc, EmbedServer bizThreadPool-848386857] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@366e0e92
+19:16:33.043 logback [Thread-185] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-185,10,main]
+19:16:35.584 logback [Thread-188] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-188,10,main]
+19:20:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-287843345] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@d47ee01
+19:20:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-287843345] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@38001d9
+19:21:33.037 logback [Thread-191] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-191,10,main]
+19:21:35.558 logback [Thread-194] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-194,10,main]
+19:25:00.067 logback [xxl-rpc, EmbedServer bizThreadPool-1766524860] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5538348a
+19:25:00.099 logback [xxl-rpc, EmbedServer bizThreadPool-1766524860] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5bffd05d
+19:26:33.109 logback [Thread-200] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-200,10,main]
+19:26:35.824 logback [Thread-197] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-197,10,main]
+19:30:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-658808382] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1a93704e
+19:30:00.612 logback [xxl-rpc, EmbedServer bizThreadPool-658808382] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@14549d6c
+19:31:33.056 logback [Thread-203] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-203,10,main]
+19:31:36.127 logback [Thread-206] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-206,10,main]
+19:35:00.049 logback [xxl-rpc, EmbedServer bizThreadPool-2069743811] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@66594e66
+19:35:00.071 logback [xxl-rpc, EmbedServer bizThreadPool-2069743811] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@689ebcdd
+19:36:33.083 logback [Thread-212] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-212,10,main]
+19:36:35.580 logback [Thread-209] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-209,10,main]
+19:40:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-1418938298] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@624d30bb
+19:40:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-1418938298] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6c8ac282
+19:41:33.037 logback [Thread-215] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-215,10,main]
+19:41:35.546 logback [Thread-218] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-218,10,main]
+19:45:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-1650827150] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@37814e62
+19:45:00.076 logback [xxl-rpc, EmbedServer bizThreadPool-1650827150] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3946b6e2
+19:46:33.086 logback [Thread-224] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-224,10,main]
+19:46:35.565 logback [Thread-221] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-221,10,main]
+19:50:00.050 logback [xxl-rpc, EmbedServer bizThreadPool-1826980200] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2af15be1
+19:50:00.077 logback [xxl-rpc, EmbedServer bizThreadPool-1826980200] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2436a0cf
+19:51:33.060 logback [Thread-227] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-227,10,main]
+19:51:35.581 logback [Thread-230] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-230,10,main]
+19:55:00.051 logback [xxl-rpc, EmbedServer bizThreadPool-2130107703] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@57ae93c8
+19:55:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-2130107703] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5969774d
+19:56:33.061 logback [Thread-233] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-233,10,main]
+19:56:35.977 logback [Thread-236] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-236,10,main]
+19:57:49.360 logback [xxl-job, executor ExecutorRegistryThread] ERROR c.x.job.core.util.XxlJobRemotingUtil - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:115)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.lang.Thread.run(Thread.java:748)
+19:57:49.361 logback [xxl-job, executor ExecutorRegistryThread] INFO  c.x.j.c.t.ExecutorRegistryThread - >>>>>>>>>>> xxl-job registry fail, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='xxl-job-executor-sample', registryValue='http://10.200.2.125:9900/'}, registryResult:ReturnT [code=500, msg=xxl-rpc remoting error(Read timed out), for url : http://10.200.2.125:8080/xxl-job-admin/api/registry, content=null]
+20:00:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-398426464] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4af10b98
+20:00:00.072 logback [xxl-rpc, EmbedServer bizThreadPool-398426464] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4436fcb6
+20:01:33.064 logback [Thread-239] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-239,10,main]
+20:01:36.007 logback [Thread-242] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-242,10,main]
+20:05:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-479873192] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6d111b5
+20:05:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-479873192] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@816ff1f
+20:06:33.063 logback [Thread-248] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-248,10,main]
+20:06:35.601 logback [Thread-245] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-245,10,main]
+20:10:00.033 logback [xxl-rpc, EmbedServer bizThreadPool-730949924] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1b1a5e98
+20:10:00.059 logback [xxl-rpc, EmbedServer bizThreadPool-730949924] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@15dda38b
+20:11:33.042 logback [Thread-251] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-251,10,main]
+20:11:35.632 logback [Thread-254] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-254,10,main]
+20:15:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-787448777] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@71c4208e
+20:15:00.045 logback [xxl-rpc, EmbedServer bizThreadPool-787448777] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7f03d0c6
+20:16:33.037 logback [Thread-257] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-257,10,main]
+20:16:35.531 logback [Thread-260] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-260,10,main]
+20:20:00.023 logback [xxl-rpc, EmbedServer bizThreadPool-893684047] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@56ec427
+20:20:00.048 logback [xxl-rpc, EmbedServer bizThreadPool-893684047] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@ba93afa
+20:21:33.032 logback [Thread-263] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-263,10,main]
+20:21:35.566 logback [Thread-266] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-266,10,main]
+20:25:00.062 logback [xxl-rpc, EmbedServer bizThreadPool-321798826] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3fe89f74
+20:25:00.104 logback [xxl-rpc, EmbedServer bizThreadPool-321798826] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@312f66f9
+20:26:33.113 logback [Thread-272] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-272,10,main]
+20:26:35.543 logback [Thread-269] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-269,10,main]
+20:30:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-731671419] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2c76b53
+20:30:00.030 logback [xxl-rpc, EmbedServer bizThreadPool-731671419] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@c00957b
+20:31:33.039 logback [Thread-275] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-275,10,main]
+20:31:35.734 logback [Thread-276] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-276,10,main]
+20:35:00.040 logback [xxl-rpc, EmbedServer bizThreadPool-2133394504] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1f24c78a
+20:35:00.064 logback [xxl-rpc, EmbedServer bizThreadPool-2133394504] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@11e33a1e
+20:36:33.073 logback [Thread-284] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-284,10,main]
+20:36:35.763 logback [Thread-281] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-281,10,main]
+20:40:00.030 logback [xxl-rpc, EmbedServer bizThreadPool-1267484967] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@354efef1
+20:40:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-1267484967] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3b890628
+20:41:33.039 logback [Thread-287] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-287,10,main]
+20:41:35.612 logback [Thread-290] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-290,10,main]
+20:45:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-882424088] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4f04c1b0
+20:45:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-882424088] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@41c33620
+20:46:33.041 logback [Thread-293] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-293,10,main]
+20:46:35.791 logback [Thread-296] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-296,10,main]
+20:50:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-371159451] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@bbc83d4
+20:50:00.080 logback [xxl-rpc, EmbedServer bizThreadPool-371159451] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@57b7cd3
+20:51:33.062 logback [Thread-299] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-299,10,main]
+20:51:35.590 logback [Thread-302] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-302,10,main]
+20:55:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1761278926] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@57ac54e3
+20:55:00.045 logback [xxl-rpc, EmbedServer bizThreadPool-1761278926] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@596bb066
+20:56:33.055 logback [Thread-308] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-308,10,main]
+20:56:35.487 logback [Thread-305] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-305,10,main]
+21:00:00.036 logback [xxl-rpc, EmbedServer bizThreadPool-61482861] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2e6393b3
+21:00:00.061 logback [xxl-rpc, EmbedServer bizThreadPool-61482861] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@20a4680f
+21:01:33.045 logback [Thread-311] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-311,10,main]
+21:01:35.593 logback [Thread-314] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-314,10,main]
+21:05:00.051 logback [xxl-rpc, EmbedServer bizThreadPool-2120123327] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@59fdd95
+21:05:00.078 logback [xxl-rpc, EmbedServer bizThreadPool-2120123327] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@b583356
+21:06:33.060 logback [Thread-317] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-317,10,main]
+21:06:35.823 logback [Thread-320] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-320,10,main]
+21:10:00.030 logback [xxl-rpc, EmbedServer bizThreadPool-896270794] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1afb4421
+21:10:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-896270794] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@143ca90e
+21:11:33.040 logback [Thread-323] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-323,10,main]
+21:11:35.573 logback [Thread-326] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-326,10,main]
+21:15:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-745049310] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6d3562db
+21:15:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-745049310] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@63f2810d
+21:16:33.064 logback [Thread-332] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-332,10,main]
+21:16:35.928 logback [Thread-329] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-329,10,main]
+21:20:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-1356338880] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7731cd1
+21:20:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-1356338880] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@9b4e24f
+21:21:33.062 logback [Thread-338] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-338,10,main]
+21:21:35.485 logback [Thread-335] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-335,10,main]
+21:25:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1167384042] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@56db12d0
+21:25:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-1167384042] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@581ce67b
+21:26:33.064 logback [Thread-344] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-344,10,main]
+21:26:35.544 logback [Thread-341] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-341,10,main]
+21:30:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-447057202] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@73cf1705
+21:30:00.080 logback [xxl-rpc, EmbedServer bizThreadPool-447057202] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7d08f70c
+21:31:33.090 logback [Thread-350] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-350,10,main]
+21:31:35.567 logback [Thread-347] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-347,10,main]
+21:35:00.045 logback [xxl-rpc, EmbedServer bizThreadPool-1258438403] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3e842f19
+21:35:00.047 logback [xxl-rpc, EmbedServer bizThreadPool-1258438403] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3043d6b9
+21:36:33.054 logback [Thread-353] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-353,10,main]
+21:36:35.510 logback [Thread-354] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-354,10,main]
+21:40:00.245 logback [xxl-rpc, EmbedServer bizThreadPool-1938769216] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1739efb6
+21:40:00.246 logback [xxl-rpc, EmbedServer bizThreadPool-1938769216] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@19fe0321
+21:41:33.255 logback [Thread-359] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-359,10,main]
+21:41:35.890 logback [Thread-360] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-360,10,main]
+21:45:00.412 logback [xxl-rpc, EmbedServer bizThreadPool-2115059685] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@49feadbb
+21:45:00.438 logback [xxl-rpc, EmbedServer bizThreadPool-2115059685] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@47394af4
+21:46:33.422 logback [Thread-365] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-365,10,main]
+21:46:35.774 logback [Thread-368] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-368,10,main]
+21:50:00.577 logback [xxl-rpc, EmbedServer bizThreadPool-1965993395] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4f743bd0
+21:50:00.668 logback [xxl-rpc, EmbedServer bizThreadPool-1965993395] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@41b3cc4e
+21:51:33.678 logback [Thread-374] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-374,10,main]
+21:51:35.850 logback [Thread-371] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-371,10,main]
+21:55:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-815072051] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5af66e07
+21:55:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-815072051] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@54319b29
+21:56:33.036 logback [Thread-377] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-377,10,main]
+21:56:35.534 logback [Thread-380] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-380,10,main]
+22:00:00.020 logback [xxl-rpc, EmbedServer bizThreadPool-904611862] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3b9a4b7b
+22:00:00.036 logback [xxl-rpc, EmbedServer bizThreadPool-904611862] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@355db278
+22:01:33.030 logback [Thread-383] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-383,10,main]
+22:01:35.538 logback [Thread-386] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-386,10,main]
+22:05:00.066 logback [xxl-rpc, EmbedServer bizThreadPool-775970843] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5fb6fc55
+22:05:00.136 logback [xxl-rpc, EmbedServer bizThreadPool-775970843] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@517119d3
+22:06:33.146 logback [Thread-392] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-392,10,main]
+22:06:35.838 logback [Thread-389] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-389,10,main]
+22:10:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-844413398] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2ccaec0c
+22:10:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-844413398] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@220d17e5
+22:11:33.041 logback [Thread-395] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-395,10,main]
+22:11:35.617 logback [Thread-398] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-398,10,main]
+22:15:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-815294036] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2a9c86f1
+22:15:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-815294036] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@245b7dd2
+22:16:33.088 logback [Thread-404] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-404,10,main]
+22:16:35.801 logback [Thread-401] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-401,10,main]
+22:20:00.043 logback [xxl-rpc, EmbedServer bizThreadPool-1072532498] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@f1fc2b
+22:20:00.069 logback [xxl-rpc, EmbedServer bizThreadPool-1072532498] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@e360245
+22:21:33.052 logback [Thread-407] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-407,10,main]
+22:21:35.963 logback [Thread-410] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-410,10,main]
+22:25:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-2070388688] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@17740ec9
+22:25:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-2070388688] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@19b3e257
+22:26:33.088 logback [Thread-416] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-416,10,main]
+22:26:35.559 logback [Thread-413] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-413,10,main]
+22:30:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-1351108108] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@736e2b10
+22:30:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-1351108108] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7da9cb0d
+22:31:33.063 logback [Thread-419] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-419,10,main]
+22:31:35.783 logback [Thread-420] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-420,10,main]
+22:35:00.045 logback [xxl-rpc, EmbedServer bizThreadPool-1075021519] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@549212e2
+22:35:00.081 logback [xxl-rpc, EmbedServer bizThreadPool-1075021519] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5a55f600
+22:36:33.055 logback [Thread-425] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-425,10,main]
+22:36:35.799 logback [Thread-428] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-428,10,main]
+22:40:00.030 logback [xxl-rpc, EmbedServer bizThreadPool-1946047433] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@105e4502
+22:40:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-1946047433] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1e99b979
+22:41:33.064 logback [Thread-434] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-434,10,main]
+22:41:35.513 logback [Thread-431] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-431,10,main]
+22:45:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-414083295] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@499719ed
+22:45:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-414083295] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4750feaf
+22:46:33.040 logback [Thread-437] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-437,10,main]
+22:46:35.611 logback [Thread-440] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-440,10,main]
+22:50:00.037 logback [xxl-rpc, EmbedServer bizThreadPool-1700440322] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@32b5495b
+22:50:00.062 logback [xxl-rpc, EmbedServer bizThreadPool-1700440322] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3c72b17d
+22:51:33.074 logback [Thread-446] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-446,10,main]
+22:51:35.842 logback [Thread-443] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-443,10,main]
+22:55:00.023 logback [xxl-rpc, EmbedServer bizThreadPool-778602710] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@46c9fa2d
+22:55:00.039 logback [xxl-rpc, EmbedServer bizThreadPool-778602710] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@480e1c84
+22:56:33.048 logback [Thread-452] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-452,10,main]
+22:56:35.490 logback [Thread-449] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-449,10,main]
+23:00:00.049 logback [xxl-rpc, EmbedServer bizThreadPool-929883577] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@133d09fc
+23:00:00.071 logback [xxl-rpc, EmbedServer bizThreadPool-929883577] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1dfaf5eb
+23:01:33.080 logback [Thread-458] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-458,10,main]
+23:01:36.004 logback [Thread-455] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-455,10,main]
+23:05:00.125 logback [xxl-rpc, EmbedServer bizThreadPool-1272723880] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@21780fe7
+23:05:00.127 logback [xxl-rpc, EmbedServer bizThreadPool-1272723880] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2fbfe5b8
+23:06:33.135 logback [Thread-461] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-461,10,main]
+23:06:35.631 logback [Thread-462] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-462,10,main]
+23:10:00.050 logback [xxl-rpc, EmbedServer bizThreadPool-27354691] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1f081783
+23:10:00.076 logback [xxl-rpc, EmbedServer bizThreadPool-27354691] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@11cfea12
+23:11:33.059 logback [Thread-467] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-467,10,main]
+23:11:35.574 logback [Thread-470] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-470,10,main]
+23:15:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-1407531147] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3ded5d27
+23:15:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-1407531147] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@332aa4ea
+23:16:33.044 logback [Thread-473] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-473,10,main]
+23:16:36.072 logback [Thread-476] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-476,10,main]
+23:20:00.062 logback [xxl-rpc, EmbedServer bizThreadPool-23831641] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5b382dd7
+23:20:00.080 logback [xxl-rpc, EmbedServer bizThreadPool-23831641] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@55ffd8c0
+23:21:33.071 logback [Thread-479] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-479,10,main]
+23:21:35.646 logback [Thread-482] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-482,10,main]
+23:25:00.048 logback [xxl-rpc, EmbedServer bizThreadPool-1044596213] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7a4b46e9
+23:25:00.074 logback [xxl-rpc, EmbedServer bizThreadPool-1044596213] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@748ca7d0
+23:26:33.057 logback [Thread-485] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-485,10,main]
+23:26:35.558 logback [Thread-488] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-488,10,main]
+23:30:00.044 logback [xxl-rpc, EmbedServer bizThreadPool-503186801] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@50a3b8d8
+23:30:00.070 logback [xxl-rpc, EmbedServer bizThreadPool-503186801] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5e645cbc
+23:31:33.053 logback [Thread-491] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-491,10,main]
+23:31:35.571 logback [Thread-494] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-494,10,main]
+23:35:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-1712921224] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@565be1ce
+23:35:00.048 logback [xxl-rpc, EmbedServer bizThreadPool-1712921224] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@589c0575
+23:36:33.056 logback [Thread-497] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-497,10,main]
+23:36:35.538 logback [Thread-498] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-498,10,main]
+23:40:00.735 logback [xxl-rpc, EmbedServer bizThreadPool-464293309] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@788bf68e
+23:40:00.763 logback [xxl-rpc, EmbedServer bizThreadPool-464293309] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@764c07ef
+23:41:33.745 logback [Thread-503] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-503,10,main]
+23:41:36.242 logback [Thread-506] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-506,10,main]
+23:45:00.715 logback [xxl-rpc, EmbedServer bizThreadPool-1367432175] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@53312d81
+23:45:00.740 logback [xxl-rpc, EmbedServer bizThreadPool-1367432175] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5df6d997
+23:46:33.725 logback [Thread-509] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-509,10,main]
+23:46:36.251 logback [Thread-512] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-512,10,main]
+23:50:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1470251384] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4ca00850
+23:50:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-1470251384] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4267efb4
+23:51:33.038 logback [Thread-515] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-515,10,main]
+23:51:35.521 logback [Thread-518] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-518,10,main]
+23:55:00.025 logback [xxl-rpc, EmbedServer bizThreadPool-1087220879] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@57b88a57
+23:55:00.051 logback [xxl-rpc, EmbedServer bizThreadPool-1087220879] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@597f6ed0
+23:56:33.034 logback [Thread-521] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-521,10,main]
+23:56:35.559 logback [Thread-524] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-524,10,main]
+00:00:00.033 logback [xxl-rpc, EmbedServer bizThreadPool-77408443] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@76b8c7a7
+00:00:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-77408443] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@787f2700
+00:01:33.045 logback [Thread-527] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-527,10,main]
+00:01:35.795 logback [Thread-530] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-530,10,main]
+00:05:00.030 logback [xxl-rpc, EmbedServer bizThreadPool-961240838] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@8200a0d
+00:05:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-961240838] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6e7f579
+00:06:33.064 logback [Thread-536] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-536,10,main]
+00:06:35.563 logback [Thread-533] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-533,10,main]
+00:10:00.033 logback [xxl-rpc, EmbedServer bizThreadPool-1831575162] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7580f2b1
+00:10:00.049 logback [xxl-rpc, EmbedServer bizThreadPool-1831575162] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7b471271
+00:11:33.058 logback [Thread-542] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-542,10,main]
+00:11:35.795 logback [Thread-539] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-539,10,main]
+00:15:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-1728964642] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@25b241d6
+00:15:00.066 logback [xxl-rpc, EmbedServer bizThreadPool-1728964642] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2b75ab10
+00:16:33.074 logback [Thread-548] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-548,10,main]
+00:16:35.565 logback [Thread-545] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-545,10,main]
+00:20:00.114 logback [xxl-rpc, EmbedServer bizThreadPool-186224112] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@343b835b
+00:20:00.139 logback [xxl-rpc, EmbedServer bizThreadPool-186224112] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3afc6bac
+00:21:33.147 logback [Thread-554] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-554,10,main]
+00:21:35.337 logback [Thread-551] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-551,10,main]
+00:25:00.050 logback [xxl-rpc, EmbedServer bizThreadPool-1494467180] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3d0eadc5
+00:25:00.075 logback [xxl-rpc, EmbedServer bizThreadPool-1494467180] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@33c94414
+00:26:33.085 logback [Thread-560] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-560,10,main]
+00:26:35.565 logback [Thread-557] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-557,10,main]
+00:30:00.021 logback [xxl-rpc, EmbedServer bizThreadPool-1911101771] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4892c7e7
+00:30:00.039 logback [xxl-rpc, EmbedServer bizThreadPool-1911101771] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@46553085
+00:31:33.030 logback [Thread-563] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-563,10,main]
+00:31:35.532 logback [Thread-566] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-566,10,main]
+00:35:01.157 logback [xxl-rpc, EmbedServer bizThreadPool-2129401110] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6c1d9894
+00:35:01.206 logback [xxl-rpc, EmbedServer bizThreadPool-2129401110] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@62da6b67
+00:36:34.216 logback [Thread-572] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-572,10,main]
+00:36:36.709 logback [Thread-569] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-569,10,main]
+00:40:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1881454702] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@59f94561
+00:40:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-1881454702] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@573ea02e
+00:41:33.063 logback [Thread-578] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-578,10,main]
+00:41:35.520 logback [Thread-575] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-575,10,main]
+00:45:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-1288175027] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@588a0208
+00:45:00.082 logback [xxl-rpc, EmbedServer bizThreadPool-1288175027] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@564df769
+00:46:33.066 logback [Thread-581] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-581,10,main]
+00:46:35.549 logback [Thread-584] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-584,10,main]
+00:50:00.369 logback [xxl-rpc, EmbedServer bizThreadPool-1585211827] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5bdbaf09
+00:50:00.394 logback [xxl-rpc, EmbedServer bizThreadPool-1585211827] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@551c5a02
+00:51:33.378 logback [Thread-587] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-587,10,main]
+00:51:35.837 logback [Thread-590] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-590,10,main]
+00:55:00.047 logback [xxl-rpc, EmbedServer bizThreadPool-711081398] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@22bb016c
+00:55:00.073 logback [xxl-rpc, EmbedServer bizThreadPool-711081398] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2c7cfb4b
+00:56:33.056 logback [Thread-593] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-593,10,main]
+00:56:35.709 logback [Thread-596] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-596,10,main]
+01:00:00.026 logback [xxl-rpc, EmbedServer bizThreadPool-623909411] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6f8dc45e
+01:00:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-623909411] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@614a37df
+01:01:33.035 logback [Thread-599] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-599,10,main]
+01:01:35.546 logback [Thread-602] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-602,10,main]
+01:05:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-46284521] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@245ec2f2
+01:05:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-46284521] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2a993809
+01:06:33.044 logback [Thread-605] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-605,10,main]
+01:06:35.518 logback [Thread-608] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-608,10,main]
+01:10:00.035 logback [xxl-rpc, EmbedServer bizThreadPool-1623136878] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@364601df
+01:10:00.069 logback [xxl-rpc, EmbedServer bizThreadPool-1623136878] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3881f967
+01:11:33.044 logback [Thread-611] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-611,10,main]
+01:11:35.631 logback [Thread-614] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-614,10,main]
+01:15:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-563867325] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@176f185e
+01:15:00.086 logback [xxl-rpc, EmbedServer bizThreadPool-563867325] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@19a8e4c3
+01:16:33.069 logback [Thread-617] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-617,10,main]
+01:16:35.673 logback [Thread-620] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-620,10,main]
+01:20:00.025 logback [xxl-rpc, EmbedServer bizThreadPool-144127124] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@739f7c24
+01:20:00.042 logback [xxl-rpc, EmbedServer bizThreadPool-144127124] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7d589c27
+01:21:33.033 logback [Thread-623] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-623,10,main]
+01:21:35.877 logback [Thread-626] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-626,10,main]
+01:25:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-1486502631] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6b31cd84
+01:25:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-1486502631] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@65f62e92
+01:26:33.036 logback [Thread-629] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-629,10,main]
+01:26:35.559 logback [Thread-632] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-632,10,main]
+01:30:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1951558370] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@40b4a477
+01:30:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-1951558370] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4e735211
+01:31:33.038 logback [Thread-635] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-635,10,main]
+01:31:35.800 logback [Thread-638] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-638,10,main]
+01:35:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-273464498] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@13bcb8b1
+01:35:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-273464498] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1d7b44b6
+01:36:33.064 logback [Thread-644] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-644,10,main]
+01:36:35.806 logback [Thread-641] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-641,10,main]
+01:40:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-487329922] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@30fa6b54
+01:40:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-487329922] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3e3d833b
+01:41:33.065 logback [Thread-650] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-650,10,main]
+01:41:35.474 logback [Thread-647] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-647,10,main]
+01:45:00.035 logback [xxl-rpc, EmbedServer bizThreadPool-1273106650] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@407a8b77
+01:45:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-1273106650] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4ebd7d08
+01:46:33.068 logback [Thread-656] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-656,10,main]
+01:46:35.520 logback [Thread-653] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-653,10,main]
+01:50:00.035 logback [xxl-rpc, EmbedServer bizThreadPool-620963403] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@58755355
+01:50:00.078 logback [xxl-rpc, EmbedServer bizThreadPool-620963403] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@56b2a62b
+01:51:33.088 logback [Thread-662] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-662,10,main]
+01:51:35.788 logback [Thread-659] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-659,10,main]
+01:55:00.076 logback [xxl-rpc, EmbedServer bizThreadPool-83404477] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2bc3dca4
+01:55:00.101 logback [xxl-rpc, EmbedServer bizThreadPool-83404477] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@250437ac
+01:56:33.085 logback [Thread-665] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-665,10,main]
+01:56:35.757 logback [Thread-668] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-668,10,main]
+02:00:00.026 logback [xxl-rpc, EmbedServer bizThreadPool-397616921] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@57524e41
+02:00:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-397616921] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5995badb
+02:01:33.036 logback [Thread-671] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-671,10,main]
+02:01:35.527 logback [Thread-674] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-674,10,main]
+02:05:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-217621973] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3e4469f5
+02:05:00.072 logback [xxl-rpc, EmbedServer bizThreadPool-217621973] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3083804d
+02:06:33.055 logback [Thread-677] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-677,10,main]
+02:06:35.547 logback [Thread-680] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-680,10,main]
+02:10:00.033 logback [xxl-rpc, EmbedServer bizThreadPool-893881330] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@71db2c19
+02:10:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-893881330] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7f1cdc52
+02:11:33.067 logback [Thread-686] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-686,10,main]
+02:11:35.665 logback [Thread-683] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-683,10,main]
+02:15:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-1069726025] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@28c61d6b
+02:15:00.045 logback [xxl-rpc, EmbedServer bizThreadPool-1069726025] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2601e603
+02:16:33.037 logback [Thread-689] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-689,10,main]
+02:16:35.549 logback [Thread-692] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-692,10,main]
+02:20:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-171104123] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@277f5a5
+02:20:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-171104123] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@cb00b9b
+02:21:33.043 logback [Thread-695] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-695,10,main]
+02:21:35.826 logback [Thread-698] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-698,10,main]
+02:25:00.026 logback [xxl-rpc, EmbedServer bizThreadPool-2016891213] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3843f4c7
+02:25:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-2016891213] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@36841dbf
+02:26:33.035 logback [Thread-701] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-701,10,main]
+02:26:35.620 logback [Thread-704] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-704,10,main]
+02:30:00.044 logback [xxl-rpc, EmbedServer bizThreadPool-1465249737] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3a5338f4
+02:30:00.069 logback [xxl-rpc, EmbedServer bizThreadPool-1465249737] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3494d1ce
+02:31:33.052 logback [Thread-707] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-707,10,main]
+02:31:35.920 logback [Thread-710] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-710,10,main]
+02:35:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-1759025722] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5981a085
+02:35:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-1759025722] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@574655c5
+02:36:33.040 logback [Thread-713] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-713,10,main]
+02:36:35.749 logback [Thread-716] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-716,10,main]
+02:40:00.038 logback [xxl-rpc, EmbedServer bizThreadPool-1507878078] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@29671bd0
+02:40:00.064 logback [xxl-rpc, EmbedServer bizThreadPool-1507878078] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@27a0f08c
+02:41:33.046 logback [Thread-719] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-719,10,main]
+02:41:35.587 logback [Thread-722] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-722,10,main]
+02:45:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-378033793] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@729bb6b
+02:45:00.061 logback [xxl-rpc, EmbedServer bizThreadPool-378033793] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@9ee55fe
+02:46:33.042 logback [Thread-725] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-725,10,main]
+02:46:35.677 logback [Thread-728] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-728,10,main]
+02:50:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-1803818020] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@27396012
+02:50:00.078 logback [xxl-rpc, EmbedServer bizThreadPool-1803818020] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@29fe8a85
+02:51:33.088 logback [Thread-734] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-734,10,main]
+02:51:35.573 logback [Thread-731] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-731,10,main]
+02:55:00.036 logback [xxl-rpc, EmbedServer bizThreadPool-969040241] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3d534eb9
+02:55:00.062 logback [xxl-rpc, EmbedServer bizThreadPool-969040241] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3394a763
+02:56:33.044 logback [Thread-737] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-737,10,main]
+02:56:35.677 logback [Thread-740] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-740,10,main]
+03:00:00.098 logback [xxl-rpc, EmbedServer bizThreadPool-1976543555] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@c7cffcc
+03:00:00.115 logback [xxl-rpc, EmbedServer bizThreadPool-1976543555] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2bb1033
+03:01:33.107 logback [Thread-743] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-743,10,main]
+03:01:35.595 logback [Thread-746] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-746,10,main]
+03:05:00.091 logback [xxl-rpc, EmbedServer bizThreadPool-993857389] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@637953b7
+03:05:00.118 logback [xxl-rpc, EmbedServer bizThreadPool-993857389] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6dbea1a8
+03:06:33.100 logback [Thread-749] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-749,10,main]
+03:06:35.865 logback [Thread-752] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-752,10,main]
+03:10:00.049 logback [xxl-rpc, EmbedServer bizThreadPool-468656062] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2b6a0d7b
+03:10:00.075 logback [xxl-rpc, EmbedServer bizThreadPool-468656062] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@25ade666
+03:11:33.059 logback [Thread-755] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-755,10,main]
+03:11:35.513 logback [Thread-758] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-758,10,main]
+03:15:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-517181953] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1b70a13
+03:15:00.067 logback [xxl-rpc, EmbedServer bizThreadPool-517181953] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@f70f455
+03:16:33.050 logback [Thread-761] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-761,10,main]
+03:16:36.260 logback [Thread-764] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-764,10,main]
+03:20:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-1586754895] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5d152ff0
+03:20:00.044 logback [xxl-rpc, EmbedServer bizThreadPool-1586754895] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@53d2da22
+03:21:33.053 logback [Thread-770] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-770,10,main]
+03:21:35.972 logback [Thread-767] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-767,10,main]
+03:25:00.081 logback [xxl-rpc, EmbedServer bizThreadPool-403071378] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@69590d10
+03:25:00.107 logback [xxl-rpc, EmbedServer bizThreadPool-403071378] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@679efe4b
+03:26:33.090 logback [Thread-773] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-773,10,main]
+03:26:35.757 logback [Thread-776] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-776,10,main]
+03:30:00.035 logback [xxl-rpc, EmbedServer bizThreadPool-308516468] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@508e32c6
+03:30:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-308516468] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5e49c6a7
+03:31:33.069 logback [Thread-782] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-782,10,main]
+03:31:35.526 logback [Thread-779] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-779,10,main]
+03:35:00.036 logback [xxl-rpc, EmbedServer bizThreadPool-1775117996] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@746e3131
+03:35:00.061 logback [xxl-rpc, EmbedServer bizThreadPool-1775117996] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7aa9d1cc
+03:36:33.070 logback [Thread-788] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-788,10,main]
+03:36:35.795 logback [Thread-785] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-785,10,main]
+03:40:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-2060661440] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@dbd7411
+03:40:00.082 logback [xxl-rpc, EmbedServer bizThreadPool-2060661440] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@37a8bd6
+03:41:33.065 logback [Thread-791] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-791,10,main]
+03:41:35.566 logback [Thread-794] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-794,10,main]
+03:45:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-667637761] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1bb3b7a5
+03:45:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-667637761] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@15744aa3
+03:46:33.042 logback [Thread-797] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-797,10,main]
+03:46:35.524 logback [Thread-798] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-798,10,main]
+03:50:00.051 logback [xxl-rpc, EmbedServer bizThreadPool-1244635701] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1cba84b7
+03:50:00.074 logback [xxl-rpc, EmbedServer bizThreadPool-1244635701] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@127d7950
+03:51:33.060 logback [Thread-803] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-803,10,main]
+03:51:35.580 logback [Thread-806] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-806,10,main]
+03:55:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-510317403] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@767349e
+03:55:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-510317403] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@9a0da02
+03:56:33.062 logback [Thread-812] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-812,10,main]
+03:56:35.515 logback [Thread-809] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-809,10,main]
+04:00:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-1523548691] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4f005fa
+04:00:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-1523548691] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@a37fb14
+04:01:33.065 logback [Thread-818] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-818,10,main]
+04:01:35.533 logback [Thread-815] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-815,10,main]
+04:05:00.069 logback [xxl-rpc, EmbedServer bizThreadPool-964730656] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@44a2fd5
+04:05:00.094 logback [xxl-rpc, EmbedServer bizThreadPool-964730656] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@a8dc12c
+04:06:33.078 logback [Thread-821] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-821,10,main]
+04:06:35.794 logback [Thread-824] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-824,10,main]
+04:10:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-924820947] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2ea982d0
+04:10:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-924820947] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@206e6975
+04:11:33.062 logback [Thread-827] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-827,10,main]
+04:11:35.789 logback [Thread-830] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-830,10,main]
+04:15:01.034 logback [xxl-rpc, EmbedServer bizThreadPool-1564201271] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@33415f8b
+04:15:01.074 logback [xxl-rpc, EmbedServer bizThreadPool-1564201271] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3d86a793
+04:16:34.083 logback [Thread-836] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-836,10,main]
+04:16:36.687 logback [Thread-833] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-833,10,main]
+04:20:00.037 logback [xxl-rpc, EmbedServer bizThreadPool-1117948562] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@191e7af6
+04:20:00.080 logback [xxl-rpc, EmbedServer bizThreadPool-1117948562] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@17d997a5
+04:21:33.045 logback [Thread-839] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-839,10,main]
+04:21:35.740 logback [Thread-842] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-842,10,main]
+04:25:00.033 logback [xxl-rpc, EmbedServer bizThreadPool-619528938] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@65c31b99
+04:25:00.059 logback [xxl-rpc, EmbedServer bizThreadPool-619528938] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6b04f951
+04:26:33.042 logback [Thread-845] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-845,10,main]
+04:26:35.717 logback [Thread-848] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-848,10,main]
+04:30:00.098 logback [xxl-rpc, EmbedServer bizThreadPool-480448640] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@13020142
+04:30:00.124 logback [xxl-rpc, EmbedServer bizThreadPool-480448640] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1dc5fd52
+04:31:33.107 logback [Thread-851] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-851,10,main]
+04:31:35.685 logback [Thread-854] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-854,10,main]
+04:35:00.024 logback [xxl-rpc, EmbedServer bizThreadPool-700019820] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@15913f44
+04:35:00.049 logback [xxl-rpc, EmbedServer bizThreadPool-700019820] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1b56c386
+04:36:33.033 logback [Thread-857] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-857,10,main]
+04:36:35.535 logback [Thread-860] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-860,10,main]
+04:40:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-72304418] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@43b1d87e
+04:40:00.067 logback [xxl-rpc, EmbedServer bizThreadPool-72304418] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4d763e78
+04:41:33.043 logback [Thread-863] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-863,10,main]
+04:41:35.517 logback [Thread-866] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-866,10,main]
+04:45:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-516396543] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3adf7dcc
+04:45:00.061 logback [xxl-rpc, EmbedServer bizThreadPool-516396543] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@341894e7
+04:46:33.043 logback [Thread-869] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-869,10,main]
+04:46:35.560 logback [Thread-872] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-872,10,main]
+04:50:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-1036928808] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@646b3225
+04:50:00.072 logback [xxl-rpc, EmbedServer bizThreadPool-1036928808] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6aacd0d8
+04:51:33.055 logback [Thread-875] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-875,10,main]
+04:51:35.814 logback [Thread-878] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-878,10,main]
+04:55:00.047 logback [xxl-rpc, EmbedServer bizThreadPool-1556522286] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1243069e
+04:55:00.090 logback [xxl-rpc, EmbedServer bizThreadPool-1556522286] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1c84eaa6
+04:56:33.056 logback [Thread-881] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-881,10,main]
+04:56:35.811 logback [Thread-884] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-884,10,main]
+05:00:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-1756854366] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@48737126
+05:00:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-1756854366] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@46b49658
+05:01:33.066 logback [Thread-890] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-890,10,main]
+05:01:35.509 logback [Thread-887] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-887,10,main]
+05:05:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-1145198724] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1545e2c2
+05:05:00.066 logback [xxl-rpc, EmbedServer bizThreadPool-1145198724] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1b820e1a
+05:06:33.048 logback [Thread-893] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-893,10,main]
+05:06:35.582 logback [Thread-896] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-896,10,main]
+05:10:00.038 logback [xxl-rpc, EmbedServer bizThreadPool-359968268] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4d9e577a
+05:10:00.063 logback [xxl-rpc, EmbedServer bizThreadPool-359968268] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4359a0b9
+05:11:33.071 logback [Thread-902] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-902,10,main]
+05:11:35.517 logback [Thread-899] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-899,10,main]
+05:15:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-681512174] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@42ef3461
+05:15:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-681512174] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4c28d24c
+05:16:33.037 logback [Thread-905] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-905,10,main]
+05:16:35.532 logback [Thread-908] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-908,10,main]
+05:20:00.082 logback [xxl-rpc, EmbedServer bizThreadPool-1531241708] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@28a3618a
+05:20:00.084 logback [xxl-rpc, EmbedServer bizThreadPool-1531241708] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@26649aee
+05:21:33.094 logback [Thread-912] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-912,10,main]
+05:21:35.612 logback [Thread-911] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-911,10,main]
+05:25:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1323968383] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5cc57874
+05:25:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-1323968383] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@52028d9c
+05:26:33.037 logback [Thread-917] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-917,10,main]
+05:26:35.519 logback [Thread-920] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-920,10,main]
+05:30:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-1087545978] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@75f358ee
+05:30:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-1087545978] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7b34a820
+05:31:33.041 logback [Thread-923] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-923,10,main]
+05:31:35.781 logback [Thread-926] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-926,10,main]
+05:35:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-1126397526] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@146c5736
+05:35:00.059 logback [xxl-rpc, EmbedServer bizThreadPool-1126397526] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1aabbbcb
+05:36:33.050 logback [Thread-929] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-929,10,main]
+05:36:35.526 logback [Thread-932] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-932,10,main]
+05:40:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-1431716169] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6d37a199
+05:40:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-1431716169] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@63f0424f
+05:41:33.037 logback [Thread-935] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-935,10,main]
+05:41:35.779 logback [Thread-938] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-938,10,main]
+05:45:00.095 logback [xxl-rpc, EmbedServer bizThreadPool-1138544308] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7d7465e6
+05:45:00.111 logback [xxl-rpc, EmbedServer bizThreadPool-1138544308] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@73b38438
+05:46:33.120 logback [Thread-944] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-944,10,main]
+05:46:35.533 logback [Thread-941] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-941,10,main]
+05:50:00.495 logback [xxl-rpc, EmbedServer bizThreadPool-957818333] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@23c4ba00
+05:50:01.121 logback [xxl-rpc, EmbedServer bizThreadPool-957818333] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2d035008
+05:51:33.505 logback [Thread-947] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-947,10,main]
+05:51:36.658 logback [Thread-950] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-950,10,main]
+05:55:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-493283359] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4e9029f8
+05:55:00.067 logback [xxl-rpc, EmbedServer bizThreadPool-493283359] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4057ce5a
+05:56:33.049 logback [Thread-953] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-953,10,main]
+05:56:35.521 logback [Thread-956] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-956,10,main]
+06:00:00.024 logback [xxl-rpc, EmbedServer bizThreadPool-354214623] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6a69a5c8
+06:00:00.048 logback [xxl-rpc, EmbedServer bizThreadPool-354214623] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@64ae56f5
+06:01:33.057 logback [Thread-962] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-962,10,main]
+06:01:35.587 logback [Thread-959] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-959,10,main]
+06:05:00.328 logback [xxl-rpc, EmbedServer bizThreadPool-498886592] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@f66428e
+06:05:00.487 logback [xxl-rpc, EmbedServer bizThreadPool-498886592] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1a1bd12
+06:06:33.496 logback [Thread-968] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-968,10,main]
+06:06:35.710 logback [Thread-965] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-965,10,main]
+06:10:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-658256649] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@248b3b6e
+06:10:00.050 logback [xxl-rpc, EmbedServer bizThreadPool-658256649] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2a4cd18f
+06:11:33.043 logback [Thread-971] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-971,10,main]
+06:11:36.006 logback [Thread-974] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-974,10,main]
+06:15:00.084 logback [xxl-rpc, EmbedServer bizThreadPool-39190424] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6435c9eb
+06:15:00.101 logback [xxl-rpc, EmbedServer bizThreadPool-39190424] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6af23b1d
+06:16:33.109 logback [Thread-980] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-980,10,main]
+06:16:35.603 logback [Thread-977] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-977,10,main]
+06:20:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-79353013] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@66044974
+06:20:00.084 logback [xxl-rpc, EmbedServer bizThreadPool-79353013] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@68c3bbc4
+06:21:33.093 logback [Thread-986] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-986,10,main]
+06:21:35.572 logback [Thread-983] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-983,10,main]
+06:25:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-273858406] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@34679b07
+06:25:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-273858406] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3aa063fb
+06:26:33.036 logback [Thread-989] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-989,10,main]
+06:26:35.709 logback [Thread-990] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-990,10,main]
+06:30:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-1868754251] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4d4655f1
+06:30:00.060 logback [xxl-rpc, EmbedServer bizThreadPool-1868754251] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4381a229
+06:31:33.044 logback [Thread-995] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-995,10,main]
+06:31:35.520 logback [Thread-998] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-998,10,main]
+06:35:00.047 logback [xxl-rpc, EmbedServer bizThreadPool-1860646207] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@63ecd0e8
+06:35:00.072 logback [xxl-rpc, EmbedServer bizThreadPool-1860646207] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6d2b22e5
+06:36:33.082 logback [Thread-1004] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1004,10,main]
+06:36:36.006 logback [Thread-1001] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1001,10,main]
+06:40:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-2125801645] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4dd81a2a
+06:40:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-2125801645] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@431ffde1
+06:41:33.088 logback [Thread-1010] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1010,10,main]
+06:41:35.713 logback [Thread-1007] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1007,10,main]
+06:45:00.030 logback [xxl-rpc, EmbedServer bizThreadPool-1995719857] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2651948f
+06:45:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-1995719857] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@28967e35
+06:46:33.039 logback [Thread-1013] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1013,10,main]
+06:46:35.545 logback [Thread-1016] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1016,10,main]
+06:50:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-1638261397] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7192c3cc
+06:50:00.077 logback [xxl-rpc, EmbedServer bizThreadPool-1638261397] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7f55238e
+06:51:33.086 logback [Thread-1022] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1022,10,main]
+06:51:35.983 logback [Thread-1019] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1019,10,main]
+06:55:00.036 logback [xxl-rpc, EmbedServer bizThreadPool-436921890] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@101b7866
+06:55:00.062 logback [xxl-rpc, EmbedServer bizThreadPool-436921890] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1edc8415
+06:56:33.045 logback [Thread-1025] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1025,10,main]
+06:56:35.513 logback [Thread-1028] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1028,10,main]
+07:00:00.062 logback [xxl-rpc, EmbedServer bizThreadPool-1106338379] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@23343c40
+07:00:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-1106338379] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2df3d656
+07:01:33.087 logback [Thread-1034] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1034,10,main]
+07:01:35.545 logback [Thread-1031] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1031,10,main]
+07:05:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1502227642] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@417fa0ad
+07:05:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-1502227642] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4fb846f2
+07:06:33.037 logback [Thread-1037] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1037,10,main]
+07:06:35.489 logback [Thread-1040] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1040,10,main]
+07:10:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-2132865233] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@69df1f32
+07:10:00.048 logback [xxl-rpc, EmbedServer bizThreadPool-2132865233] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6718ec79
+07:11:33.057 logback [Thread-1046] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1046,10,main]
+07:11:35.750 logback [Thread-1043] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1043,10,main]
+07:15:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-331396957] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@649d045d
+07:15:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-331396957] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6a5af6be
+07:16:33.062 logback [Thread-1052] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1052,10,main]
+07:16:35.747 logback [Thread-1049] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1049,10,main]
+07:20:00.768 logback [xxl-rpc, EmbedServer bizThreadPool-5033482] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@16077a3d
+07:20:00.769 logback [xxl-rpc, EmbedServer bizThreadPool-5033482] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@18c0968d
+07:21:33.777 logback [Thread-1055] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1055,10,main]
+07:21:36.155 logback [Thread-1056] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1056,10,main]
+07:25:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-19012036] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@113c1348
+07:25:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-19012036] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1ffbef1f
+07:26:33.062 logback [Thread-1064] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1064,10,main]
+07:26:35.735 logback [Thread-1061] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1061,10,main]
+07:30:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-915547136] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1e08fed0
+07:30:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-915547136] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@10cf0361
+07:31:33.063 logback [Thread-1067] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1067,10,main]
+07:31:35.548 logback [Thread-1068] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1068,10,main]
+07:35:00.354 logback [xxl-rpc, EmbedServer bizThreadPool-1404635244] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@391955f8
+07:35:00.386 logback [xxl-rpc, EmbedServer bizThreadPool-1404635244] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@37debcab
+07:36:33.396 logback [Thread-1076] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1076,10,main]
+07:36:35.698 logback [Thread-1073] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1073,10,main]
+07:40:00.479 logback [xxl-rpc, EmbedServer bizThreadPool-99962999] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@64bb441a
+07:40:00.481 logback [xxl-rpc, EmbedServer bizThreadPool-99962999] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6a7ca6fd
+07:41:33.489 logback [Thread-1079] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1079,10,main]
+07:41:35.991 logback [Thread-1080] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1080,10,main]
+07:45:00.034 logback [xxl-rpc, EmbedServer bizThreadPool-1041729326] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@69fdee55
+07:45:00.068 logback [xxl-rpc, EmbedServer bizThreadPool-1041729326] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@673a0d1a
+07:46:33.076 logback [Thread-1088] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1088,10,main]
+07:46:35.485 logback [Thread-1085] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1085,10,main]
+07:50:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-684282324] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@45ee3360
+07:50:00.089 logback [xxl-rpc, EmbedServer bizThreadPool-684282324] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4b29d5ad
+07:51:33.067 logback [Thread-1091] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1091,10,main]
+07:51:35.549 logback [Thread-1094] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1094,10,main]
+07:55:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-493150159] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@51e9a95a
+07:55:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-493150159] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5f2e5d17
+07:56:33.061 logback [Thread-1100] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1100,10,main]
+07:56:35.487 logback [Thread-1097] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1097,10,main]
+08:00:01.331 logback [xxl-rpc, EmbedServer bizThreadPool-1641712189] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@522c9eb3
+08:00:01.381 logback [xxl-rpc, EmbedServer bizThreadPool-1641712189] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5ceb6a86
+08:01:34.340 logback [Thread-1103] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1103,10,main]
+08:01:36.979 logback [Thread-1106] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1106,10,main]
+08:05:00.025 logback [xxl-rpc, EmbedServer bizThreadPool-799713789] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@400128c5
+08:05:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-799713789] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4ec6ceb5
+08:06:33.067 logback [Thread-1112] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1112,10,main]
+08:06:35.695 logback [Thread-1109] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1109,10,main]
+08:10:00.751 logback [xxl-rpc, EmbedServer bizThreadPool-779768295] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6987c34d
+08:10:00.752 logback [xxl-rpc, EmbedServer bizThreadPool-779768295] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6740200d
+08:11:33.760 logback [Thread-1115] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1115,10,main]
+08:11:36.171 logback [Thread-1116] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1116,10,main]
+08:15:00.059 logback [xxl-rpc, EmbedServer bizThreadPool-877730603] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@775a61db
+08:15:00.082 logback [xxl-rpc, EmbedServer bizThreadPool-877730603] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@799d8140
+08:16:33.090 logback [Thread-1124] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1124,10,main]
+08:16:35.518 logback [Thread-1121] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1121,10,main]
+08:20:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-1665030641] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2a2ce5dc
+08:20:00.079 logback [xxl-rpc, EmbedServer bizThreadPool-1665030641] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@24eb1ee9
+08:21:33.089 logback [Thread-1130] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1130,10,main]
+08:21:35.743 logback [Thread-1127] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1127,10,main]
+08:25:00.479 logback [xxl-rpc, EmbedServer bizThreadPool-1588084495] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6f9aafa0
+08:25:00.513 logback [xxl-rpc, EmbedServer bizThreadPool-1588084495] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@615d4c23
+08:26:33.489 logback [Thread-1133] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1133,10,main]
+08:26:36.347 logback [Thread-1136] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1136,10,main]
+08:30:00.027 logback [xxl-rpc, EmbedServer bizThreadPool-2036061008] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4568cc83
+08:30:00.042 logback [xxl-rpc, EmbedServer bizThreadPool-2036061008] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4baf2a5e
+08:31:33.051 logback [Thread-1142] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1142,10,main]
+08:31:35.553 logback [Thread-1139] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1139,10,main]
+08:35:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-862017906] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@77918edd
+08:35:00.071 logback [xxl-rpc, EmbedServer bizThreadPool-862017906] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@79566e5f
+08:36:33.080 logback [Thread-1148] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1148,10,main]
+08:36:35.620 logback [Thread-1145] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1145,10,main]
+08:40:00.052 logback [xxl-rpc, EmbedServer bizThreadPool-1291157595] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3211bd52
+08:40:00.084 logback [xxl-rpc, EmbedServer bizThreadPool-1291157595] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3cd64560
+08:41:33.061 logback [Thread-1151] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1151,10,main]
+08:41:35.529 logback [Thread-1154] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1154,10,main]
+08:45:00.039 logback [xxl-rpc, EmbedServer bizThreadPool-2085613547] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2be5e801
+08:45:00.065 logback [xxl-rpc, EmbedServer bizThreadPool-2085613547] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2522130d
+08:46:33.048 logback [Thread-1157] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1157,10,main]
+08:46:35.746 logback [Thread-1160] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1160,10,main]
+08:50:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-339602593] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@72ffb056
+08:50:00.058 logback [xxl-rpc, EmbedServer bizThreadPool-339602593] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7c385079
+08:51:33.041 logback [Thread-1163] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1163,10,main]
+08:51:35.724 logback [Thread-1166] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1166,10,main]
+08:55:00.026 logback [xxl-rpc, EmbedServer bizThreadPool-1712960390] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@f338076
+08:55:00.051 logback [xxl-rpc, EmbedServer bizThreadPool-1712960390] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1f47fe0
+08:56:33.059 logback [Thread-1172] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1172,10,main]
+08:56:35.729 logback [Thread-1169] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1169,10,main]
+09:00:00.039 logback [xxl-rpc, EmbedServer bizThreadPool-786721148] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5caec8f3
+09:00:00.064 logback [xxl-rpc, EmbedServer bizThreadPool-786721148] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@52692d16
+09:01:33.073 logback [Thread-1178] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1178,10,main]
+09:01:35.521 logback [Thread-1175] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1175,10,main]
+09:05:00.851 logback [xxl-rpc, EmbedServer bizThreadPool-1990579012] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@4ca46364
+09:05:01.504 logback [xxl-rpc, EmbedServer bizThreadPool-1990579012] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@42639480
+09:06:34.514 logback [Thread-1184] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1184,10,main]
+09:06:36.744 logback [Thread-1181] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1181,10,main]
+09:10:00.077 logback [xxl-rpc, EmbedServer bizThreadPool-864776472] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@56f661ac
+09:10:00.100 logback [xxl-rpc, EmbedServer bizThreadPool-864776472] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@58318502
+09:11:33.086 logback [Thread-1187] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1187,10,main]
+09:11:35.515 logback [Thread-1190] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1190,10,main]
+09:15:00.268 logback [xxl-rpc, EmbedServer bizThreadPool-1906754373] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@768baef2
+09:15:00.293 logback [xxl-rpc, EmbedServer bizThreadPool-1906754373] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@784c4e53
+09:16:33.303 logback [Thread-1196] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1196,10,main]
+09:16:35.653 logback [Thread-1193] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1193,10,main]
+09:20:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-1985017478] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3e5625a1
+09:20:00.055 logback [xxl-rpc, EmbedServer bizThreadPool-1985017478] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3091cc1b
+09:21:33.037 logback [Thread-1199] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1199,10,main]
+09:21:35.417 logback [Thread-1202] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1202,10,main]
+09:25:00.029 logback [xxl-rpc, EmbedServer bizThreadPool-1278935882] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@15b911e8
+09:25:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-1278935882] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@1b7efd2f
+09:26:33.038 logback [Thread-1205] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1205,10,main]
+09:26:35.504 logback [Thread-1208] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1208,10,main]
+09:30:00.090 logback [xxl-rpc, EmbedServer bizThreadPool-429551394] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@27507a2a
+09:30:00.116 logback [xxl-rpc, EmbedServer bizThreadPool-429551394] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@299780b0
+09:31:33.099 logback [Thread-1211] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1211,10,main]
+09:31:35.647 logback [Thread-1214] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1214,10,main]
+09:35:00.044 logback [xxl-rpc, EmbedServer bizThreadPool-289159746] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@24e21e
+09:35:00.070 logback [xxl-rpc, EmbedServer bizThreadPool-289159746] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@ee31c6a
+09:36:33.053 logback [Thread-1217] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1217,10,main]
+09:36:35.529 logback [Thread-1220] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1220,10,main]
+09:40:00.031 logback [xxl-rpc, EmbedServer bizThreadPool-140361302] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@228859ce
+09:40:00.056 logback [xxl-rpc, EmbedServer bizThreadPool-140361302] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2c4fa3ef
+09:41:33.039 logback [Thread-1223] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1223,10,main]
+09:41:35.568 logback [Thread-1226] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1226,10,main]
+09:45:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-2075118338] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6d0fe012
+09:45:00.098 logback [xxl-rpc, EmbedServer bizThreadPool-2075118338] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@63c813c3
+09:46:33.066 logback [Thread-1229] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1229,10,main]
+09:46:35.790 logback [Thread-1232] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1232,10,main]
+09:50:00.041 logback [xxl-rpc, EmbedServer bizThreadPool-423658595] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7ebc471a
+09:50:00.068 logback [xxl-rpc, EmbedServer bizThreadPool-423658595] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@707ba6bd
+09:51:33.050 logback [Thread-1235] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1235,10,main]
+09:51:35.737 logback [Thread-1238] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1238,10,main]
+09:55:00.100 logback [xxl-rpc, EmbedServer bizThreadPool-276262230] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3a5818e4
+09:55:00.124 logback [xxl-rpc, EmbedServer bizThreadPool-276262230] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@349fe1df
+09:56:33.109 logback [Thread-1241] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1241,10,main]
+09:56:35.590 logback [Thread-1244] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1244,10,main]
+10:00:00.039 logback [xxl-rpc, EmbedServer bizThreadPool-1408877401] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@bd6e223
+10:00:00.064 logback [xxl-rpc, EmbedServer bizThreadPool-1408877401] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5110d29
+10:01:33.048 logback [Thread-1247] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1247,10,main]
+10:01:35.947 logback [Thread-1250] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1250,10,main]
+10:05:00.054 logback [xxl-rpc, EmbedServer bizThreadPool-979657162] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3cbdb381
+10:05:00.080 logback [xxl-rpc, EmbedServer bizThreadPool-979657162] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@327a4a66
+10:06:33.062 logback [Thread-1253] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1253,10,main]
+10:06:35.727 logback [Thread-1256] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1256,10,main]
+10:10:00.047 logback [xxl-rpc, EmbedServer bizThreadPool-488587758] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@5a519d4c
+10:10:00.071 logback [xxl-rpc, EmbedServer bizThreadPool-488587758] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@54966876
+10:11:33.056 logback [Thread-1259] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1259,10,main]
+10:11:35.801 logback [Thread-1262] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1262,10,main]
+10:15:00.075 logback [xxl-rpc, EmbedServer bizThreadPool-214632922] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@a31654
+10:15:00.101 logback [xxl-rpc, EmbedServer bizThreadPool-214632922] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@e64f830
+10:16:33.084 logback [Thread-1265] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1265,10,main]
+10:16:35.950 logback [Thread-1268] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1268,10,main]
+10:20:00.028 logback [xxl-rpc, EmbedServer bizThreadPool-1294784005] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2a16bc2
+10:20:00.053 logback [xxl-rpc, EmbedServer bizThreadPool-1294784005] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@c6685e6
+10:21:33.037 logback [Thread-1271] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1271,10,main]
+10:21:35.562 logback [Thread-1274] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1274,10,main]
+10:25:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-305930690] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@938a245
+10:25:00.033 logback [xxl-rpc, EmbedServer bizThreadPool-305930690] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7ff4d12
+10:26:33.040 logback [Thread-1277] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1277,10,main]
+10:26:35.755 logback [Thread-1278] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1278,10,main]
+10:30:00.032 logback [xxl-rpc, EmbedServer bizThreadPool-777194890] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3122c308
+10:30:00.057 logback [xxl-rpc, EmbedServer bizThreadPool-777194890] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@3fe53b5c
+10:31:33.066 logback [Thread-1286] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1286,10,main]
+10:31:35.547 logback [Thread-1283] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1283,10,main]
+10:35:00.036 logback [xxl-rpc, EmbedServer bizThreadPool-430434566] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@37db7c54
+10:35:00.069 logback [xxl-rpc, EmbedServer bizThreadPool-430434566] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@391c94df
+10:36:33.078 logback [Thread-1292] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1292,10,main]
+10:36:35.549 logback [Thread-1289] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1289,10,main]
+10:40:00.038 logback [xxl-rpc, EmbedServer bizThreadPool-690986025] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@7e7496a4
+10:40:00.063 logback [xxl-rpc, EmbedServer bizThreadPool-690986025] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@70b3771a
+10:41:33.046 logback [Thread-1295] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1295,10,main]
+10:41:35.515 logback [Thread-1298] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1298,10,main]
+10:45:00.197 logback [xxl-rpc, EmbedServer bizThreadPool-199370913] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@21adc4d7
+10:45:00.431 logback [xxl-rpc, EmbedServer bizThreadPool-199370913] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@2f6a2e92
+10:46:33.206 logback [Thread-1301] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1301,10,main]
+10:46:35.742 logback [Thread-1304] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1304,10,main]
+10:50:00.046 logback [xxl-rpc, EmbedServer bizThreadPool-1133497654] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:3, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@60dccfa3
+10:50:00.070 logback [xxl-rpc, EmbedServer bizThreadPool-1133497654] INFO  c.x.job.core.executor.XxlJobExecutor - >>>>>>>>>>> xxl-job regist JobThread success, jobId:2, handler:com.xxl.job.core.handler.impl.ScriptJobHandler@6e1b2dc8
+10:51:33.080 logback [Thread-1310] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1310,10,main]
+10:51:35.544 logback [Thread-1307] INFO  com.xxl.job.core.thread.JobThread - >>>>>>>>>>> xxl-job JobThread stoped, hashCode:Thread[Thread-1307,10,main]
